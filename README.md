@@ -4,3 +4,4 @@
 - Removed unnecessary code 
 - DaisyUI component library installed
 - Add navbar component to App.jsx file 
+- Created navbar separate component file
