@@ -9,4 +9,4 @@
 - Created BrowserRouter > Routes > Route="/" > Body > Multiple children routes
 - Created an outlet inside the Body component so the children component will render
 - Footer is created.
-- timestamp =
+- Login page created and axios library installed
