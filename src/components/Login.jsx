@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
+import { useNavigate } from "react-router";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("abhishek.madiwale@gmail.com");
+  const [password, setPassword] = useState("Abhishek@06");
 
-  // const handleLogin = async () => {
-  //   // After nodejs implement the API
-  //   // Time stamp 15min devTinder 2nd lecture
-  // };
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogin = async () => {
+    // After nodejs implement the API
+    // Time stamp 15min devTinder 2nd lecture
+
+    // we have to fix this with actual backend
+    // watch 2nd episode at 1hr:01min
+    dispatch(addUser(email));
+    navigate("/");
+  };
 
   return (
     <div className="flex justify-center my-10">
@@ -92,7 +103,9 @@ const Login = () => {
             </p>
           </div>
           <div className="card-actions  justify-center">
-            <button className="btn bg-primary">Login</button>
+            <button className="btn bg-primary" onClick={handleLogin}>
+              Login
+            </button>
           </div>
         </div>
       </div>
