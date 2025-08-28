@@ -21,3 +21,5 @@
 - Login and user name is passing on navbar and redirecting to feed component
 - constant file created
 - project file structure restructured
+- Routing implemented
+- user can logout now
